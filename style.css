@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+}
+.main__img{
+    height: 500px;
+    width: 400px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.main__content{
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    padding: 20px 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.main__content__children{
+    /* background-color: yellowgreen; */
+    padding: 15px;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: left; 
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main__content__children > h4{
+    /* color: red; */
+    letter-spacing: 0.3rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    color:hsl(20, 2%, 65%);
+    margin-bottom: 20px;
+}
+
+.main__content__children > h2{
+    color: black;
+    font-size: 34px;
+    width: 85%;
+    font-family: 'Fraunces', serif;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+
+.main__content__children > p{
+    color: hsl(20, 2%, 65%);
+    margin-bottom: 20px;
+    font-size: 16px;
+    width: 90%;
+    line-height: 1.3rem;
+    font-family: 'Outfit', sans-serif;
+}
+
+.pricing__content{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.pricing__content > h3{
+    color:green;
+    margin-right: 40px;
+    margin-left: 30px;
+    font-size: 48px;
+}
+.pricing__content > h4{
+    color:hsl(20, 2%, 65%);
+    font-size: 22px;
+}
+
+.add__to__cart__btn{
+    font-size: 18px;
+    margin: 10px;
+    color:white;
+    width: 90%;
+    background-color: green;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    border: 0;
+    cursor: pointer;
+}
+
+.add__to__cart__btn > img{
+    height: 22px;
+    width: 22px;
+    margin-right: 20px;
+    color: white;
+}
+ 
+  @media (max-width: 695px) {
+    .container{
+        flex-direction: column;
+    }
+    .main__img{
+        height: 350px;
+        width: 500px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .main__content{
+        width: 500px;
+        height: 500px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+    .main__content__children > h2{
+        font-size: 36px;
+    }
+    .main__content__children > p{
+        font-size: 16px;
+    }
+    .pricing__content > h3{
+        font-size: 38px;
+    }
+    .pricing__content > h4{
+        font-size: 22px;
+    }
+  }
+
+  
+@media (max-width: 540px) {
+    .container{
+        flex-direction: column;
+    }
+    .main__img{
+        height: 250px;
+        width: 350px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .main__content{
+        width: 350px;
+        height: 450px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+    .main__content__children > h2{
+        font-size: 26px;
+    }
+    .main__content__children > p{
+        font-size: 16px;
+    }
+    .pricing__content > h3{
+        font-size: 28px;
+    }
+    .pricing__content > h4{
+        font-size: 16px;
+    }
+  } 
+
+  @media (max-width: 375px) {
+    .container{
+        flex-direction: column;
+    }
+    .main__img{
+        height: 250px;
+        width: 300px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .main__content{
+        width: 300px;
+        height: 450px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+    .main__content__children > h2{
+        font-size: 24px;
+    }
+    .main__content__children > p{
+        font-size: 14px;
+    }
+    .pricing__content > h3{
+        font-size: 24px;
+    }
+    .pricing__content > h4{
+        font-size: 14px;
+    }
+  } 
