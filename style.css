@@ -100,8 +100,36 @@
     margin-right: 20px;
     color: white;
 }
- 
-  @media (max-width: 695px) {
+
+@media (max-width: 895px) {
+    
+    .main__img{
+        height: 450px;
+        width: 350px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    .main__content{
+        width: 400px;
+        height: 450px;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .main__content__children > h2{
+        font-size: 30px;
+    }
+    .main__content__children > p{
+        font-size: 14px;
+    }
+    .pricing__content > h3{
+        font-size: 34px;
+    }
+    .pricing__content > h4{
+        font-size: 16px;
+    }
+  }
+
+  @media (max-width: 810px) {
     .container{
         flex-direction: column;
     }
